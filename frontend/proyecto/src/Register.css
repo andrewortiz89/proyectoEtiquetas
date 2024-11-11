@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+/* Variables y reset global */
+:root {
+  --primary-color: #504EBD;
+  --primary-hover: #3e3c9d;
+  --background-gradient: linear-gradient(135deg, #f5f7ff 0%, #f0e7ff 100%);
+  --card-background: rgba(255, 255, 255, 0.9);
+  --input-background: rgba(235, 220, 220, 0.39);
+  --text-color: #0e0d0d;
+  --text-secondary: #666;
+  --border-radius: 12px;
+  --transition: all 0.3s ease;
+}
+
+/* Estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Martel Sans", serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-gradient);
+  padding: 20px;
+}
+
+/* Contenedor principal */
+main {
+  width: 100%;
+  max-width: 420px;
+  background: var(--card-background);
+  backdrop-filter: blur(10px);
+  border-radius: var(--border-radius);
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease;
+}
+
+main h1 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 900;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+/* Formulario y campos */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-group {
+  position: relative;
+}
+
+label {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: var(--input-background);
+  font-size: 1rem;
+  color: var(--text-color);
+  transition: var(--transition);
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--text-secondary);
+}
+
+input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 4px rgba(80, 78, 189, 0.1);
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+button:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(80, 78, 189, 0.2);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.message {
+  text-align: center;
+  color: var(--primary-color);
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+p {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+
+p a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+p a:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media queries para responsividad */
+@media (max-width: 480px) {
+  main {
+    padding: 30px 20px;
+  }
+
+  main h1 {
+    font-size: 1.75rem;
+  }
+
+  input, button {
+    padding: 12px;
+  }
+}

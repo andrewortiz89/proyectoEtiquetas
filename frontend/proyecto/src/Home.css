@@ -1,0 +1,213 @@
+/* Main container */
+.home-container {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Hero section */
+.home-hero-section {
+  padding: 2rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+/* Content wrapper */
+.home-content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Text content */
+.home-text-content {
+  padding: 2rem 0;
+}
+
+.home-title {
+  font-size: 3.5rem;
+  color: #504EBD;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  animation: fadeIn 0.8s ease-in;
+}
+
+.home-description {
+  font-size: 1.1rem;
+  color: #495057;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* CTA Button */
+.home-cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #504EBD;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(80, 78, 189, 0.2);
+}
+
+.home-cta-button:hover {
+  background-color: #403e97;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(80, 78, 189, 0.3);
+}
+
+/* Video section */
+.home-video-section {
+  width: 100%;
+}
+
+.home-player-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.home-player-wrapper:hover {
+  transform: scale(1.02);
+}
+
+.home-react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .home-content-wrapper {
+    gap: 2rem;
+  }
+  
+  .home-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .home-hero-section {
+    padding: 2rem 1rem;
+  }
+
+  .home-text-content {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .home-title {
+    font-size: 2.5rem;
+  }
+
+  .home-player-wrapper {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .home-description {
+    font-size: 1rem;
+  }
+
+  .home-cta-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+/* Sección de imágenes */
+.home-images-section {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+}
+
+.home-images-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.home-image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* Esto crea un contenedor con proporción 4:3 */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.home-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Esto asegura que la imagen cubra todo el espacio sin distorsionarse */
+  transition: transform 0.3s ease;
+}
+
+.home-image-container:hover {
+  transform: translateY(-5px);
+}
+
+.home-image-container:hover .home-image {
+  transform: scale(1.05); /* Efecto de zoom suave al hacer hover */
+}
+
+/* Media Queries para las imágenes */
+@media (max-width: 768px) {
+  .home-images-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .home-images-section {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-images-wrapper {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .home-images-section {
+    padding: 2rem 1rem;
+  }
+}
