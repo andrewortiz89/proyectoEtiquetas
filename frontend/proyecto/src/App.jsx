@@ -7,7 +7,7 @@ import Home from './Home';
 import Quien from './Quien';
 import Inicio from'./Inicio';
 import Register from './Register';
-import Etiqueta from './etiqueta';
+
 import CardSection from './CardSection';
 
 
@@ -23,7 +23,7 @@ function App() {
         <Route path="/Quien" element= {<Quien/>} />
         <Route path="/Inicio" element= {<Inicio/>} />
         <Route path="/Register" element= {<Register/>} />
-        <Route path="/Etiqueta" element= {<Etiqueta/>} />
+        
         <Route path="/CardSection" element= {<CardSection/>} />
 
       </Routes>
