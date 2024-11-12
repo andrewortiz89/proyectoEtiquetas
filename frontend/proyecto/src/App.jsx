@@ -8,7 +8,7 @@ import Quien from './Quien';
 import Inicio from'./Inicio';
 import Register from './Register';
 
-import CardSection from './CardSection';
+
 
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
         <Route path="/Inicio" element= {<Inicio/>} />
         <Route path="/Register" element= {<Register/>} />
         
-        <Route path="/CardSection" element= {<CardSection/>} />
+       
 
       </Routes>
     </BrowserRouter>
