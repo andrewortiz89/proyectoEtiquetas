@@ -2,6 +2,8 @@ import React from "react";
 import './Home.css';
 import video from './video1.mp4';
 import ReactPlayer from 'react-player';
+import { Link } from "react-router-dom";
+
 // Corregimos las rutas de importación
 import img1 from './assets/img1.png';
 import img2 from './assets/img2.png';
@@ -18,9 +20,10 @@ const Home = () => {
               Somos una empresa dedicada a brindar soluciones innovadoras a nuestros
               clientes. Nuestro objetivo es ayudarte a alcanzar tus metas.
             </p>
-            <a href="/Quien" className="home-cta-button">
-              Más Información
-            </a>
+            <Link to="/Quien" className="home-cta-button">
+  Más Información
+</Link>
+
           </div>
           
           <div className="home-video-section">

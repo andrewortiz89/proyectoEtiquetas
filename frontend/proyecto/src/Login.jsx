@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import './Login.css'
+import { Link } from "react-router-dom";
 
 
 
@@ -57,9 +58,10 @@ const handleLogin =async(e)=> {
             <button type="submit">Ingresar</button>
             
             <p>
-                ¿No tienes cuenta? 
-                <a href="/Register"> Regístrate aquí</a>
-            </p>
+  ¿No tienes cuenta? 
+  <Link to="/Register"> Regístrate aquí</Link>
+</p>
+
         </form>
     </main>
     )

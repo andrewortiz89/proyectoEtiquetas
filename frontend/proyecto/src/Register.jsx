@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import './Register.css';
+import { Link } from "react-router-dom";
+
 
 export function Register() {
   const [email, setEmail] = useState('');
@@ -68,8 +70,9 @@ export function Register() {
       {message && <p className="message">{message}</p>}
 
       <p>
-        ¿Ya tienes cuenta? <a href="/Login">Iniciar sesión</a>
-      </p>
+  ¿Ya tienes cuenta? <Link to="/Login">Iniciar sesión</Link>
+</p>
+
     </main>
   );
 }
