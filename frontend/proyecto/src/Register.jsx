@@ -18,7 +18,7 @@ export function Register() {
       const response = await axios.post('http://localhost:3000/register', { email, password });
       setMessage(response.data.message);
       alert('Registro Exitoso');
-      navigate('/login', { replace: true });
+      navigate('/Login', { replace: true });
     } catch (error) {
       if (error.response) {
         setMessage(error.response.data.message);
@@ -68,7 +68,7 @@ export function Register() {
       {message && <p className="message">{message}</p>}
 
       <p>
-        ¿Ya tienes cuenta? <a href="/login">Iniciar sesión</a>
+        ¿Ya tienes cuenta? <a href="/Login">Iniciar sesión</a>
       </p>
     </main>
   );

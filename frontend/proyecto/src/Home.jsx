@@ -18,7 +18,7 @@ const Home = () => {
               Somos una empresa dedicada a brindar soluciones innovadoras a nuestros
               clientes. Nuestro objetivo es ayudarte a alcanzar tus metas.
             </p>
-            <a href="/quien" className="home-cta-button">
+            <a href="/Quien" className="home-cta-button">
               Más Información
             </a>
           </div>

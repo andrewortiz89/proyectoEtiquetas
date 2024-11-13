@@ -7,7 +7,7 @@ const Quien = () => {
   const navigate = useNavigate();
 
   const handleRegistroClick = () => {
-    navigate('/register'); //  ruta a '/register'
+    navigate('/Register'); //  ruta a '/register'
   };
 
   return (
