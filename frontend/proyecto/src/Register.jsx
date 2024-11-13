@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import './Register.css';
+import { Link } from "react-router-dom";
+
 
 export function Register() {
   const [email, setEmail] = useState('');
@@ -15,8 +17,7 @@ export function Register() {
     setIsSubmitting(true);
 
     try {
-      const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:3000';
-      const response = await axios.post(`${apiUrl}/register`, { email, password });
+      const response = await axios.post('http://localhost:3000/register', { email, password });
       setMessage(response.data.message);
       alert('Registro Exitoso');
       navigate('/Login', { replace: true });
@@ -24,7 +25,7 @@ export function Register() {
       if (error.response) {
         setMessage(error.response.data.message);
       } else {
-        setMessage('Error al registrar el usuario. Inténtalo más tarde.');
+        setMessage('Error al registrar el usuario');
       }
     } finally {
       setIsSubmitting(false);
@@ -69,8 +70,9 @@ export function Register() {
       {message && <p className="message">{message}</p>}
 
       <p>
-        ¿Ya tienes cuenta? <Link to="/Login">Iniciar sesión</Link>
-      </p>
+  ¿Ya tienes cuenta? <Link to="/Login">Iniciar sesión</Link>
+</p>
+
     </main>
   );
 }
