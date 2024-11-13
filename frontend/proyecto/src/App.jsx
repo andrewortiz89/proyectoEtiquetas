@@ -24,7 +24,7 @@ function App() {
         <Route path="/Inicio" element= {<Inicio/>} />
         <Route path="/Register" element= {<Register/>} />
         
-       
+        
 
       </Routes>
     </BrowserRouter>
