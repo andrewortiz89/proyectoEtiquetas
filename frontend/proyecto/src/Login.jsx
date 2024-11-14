@@ -18,7 +18,7 @@ const handleLogin =async(e)=> {
 
     try {
 
-        const response =await axios.post('http://bg7ucnto58iap0qu2rft-mysql.services.clever-cloud.com/login',{email,password});
+        const response =await axios.post('https://bg7ucnto58iap0qu2rft-mysql.services.clever-cloud.com/login',{email,password});
         if (response.data.message=== 'Bienvenido a la plataforma'){
             alert('Bienvenido')
             navigate ('/Inicio'); // Ingresa a la interfaz
