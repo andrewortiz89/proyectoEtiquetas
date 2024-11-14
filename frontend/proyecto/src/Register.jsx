@@ -17,7 +17,7 @@ export function Register() {
     setIsSubmitting(true);
 
     try {
-      const response = await axios.post('http://localhost:3000/register', { email, password });
+      const response = await axios.post('https://bg7ucnto58iap0qu2rft-mysql.services.clever-cloud.com/register', { email, password });
       setMessage(response.data.message);
       alert('Registro Exitoso');
       navigate('/Login', { replace: true });
