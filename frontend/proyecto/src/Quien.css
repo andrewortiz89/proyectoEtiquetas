@@ -1,0 +1,294 @@
+/* Estilos base */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal */
+.quien-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.cards-container {
+  width: 100vh;
+  background-color: #f5f5f5;
+  padding: 2rem;
+  position: relative;
+  
+}
+
+/* Hero Section */
+.hero-section {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  position: relative;
+  padding: 4rem 0;
+  text-align: center;
+  background: linear-gradient(135deg, #504EBD 0%, #7673d4 100%);
+  color: white;
+}
+
+.animated-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #504EBD 0%, #7673d4 100%);
+  z-index: -1;
+}
+
+.section-header {
+  position: relative;
+  z-index: 1;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.title-underline {
+  width: 80px;
+  height: 4px;
+  margin: 0.5rem auto;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Cards Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: center; /* Centrar en el eje horizontal */
+  align-items: start; /* Opcional, ajustar según preferencia */
+  margin-top: 2rem;
+  position: relative;
+}
+
+
+/* Card Styles */
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.icon-container {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #504EBD;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.card-description p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Card Stats */
+.card-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #504EBD;
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Expertise Tags */
+.expertise-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.tag {
+  padding: 0.3rem 0.7rem;
+  font-size: 0.85rem;
+  color: #504EBD;
+  background: #e0e7ff;
+  border-radius: 6px;
+}
+
+/* Values List */
+.values-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.value-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.value-icon {
+  color: #504EBD;
+}
+
+/* Vision Section */
+.vision-section {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #f3f2ff;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.vision-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.vision-icon {
+  color: #504EBD;
+  margin-bottom: 1rem;
+}
+
+.vision-content h3 {
+  font-size: 1.75rem;
+  color: #504EBD;
+  margin-bottom: 1rem;
+}
+
+.vision-content p {
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto 1rem auto;
+}
+
+.cta-container {
+  margin-top: 1.5rem;
+}
+
+.cta-text {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Button Styles */
+.card-button {
+  background-color: #504EBD;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.card-button:hover {
+  background-color: #3d3ba5;
+}
+
+.button-icon {
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cards-container {
+    padding: 1rem;
+  }
+
+  .hero-section {
+    padding: 3rem 1rem;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .vision-section {
+    padding: 1.5rem;
+  }
+
+  .card-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .expertise-tags {
+    justify-content: center;
+  }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeIn 0.5s ease-out;
+}

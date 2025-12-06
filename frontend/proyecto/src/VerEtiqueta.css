@@ -1,0 +1,89 @@
+.veretiqueta-container {
+  padding: 40px;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.etiqueta-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 35px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.barcode-img {
+  width: 100%;
+  max-width: 380px;
+  margin: 20px auto;
+}
+
+.detalle-tipo {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #444;
+}
+
+.acciones {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+/* Botones */
+.imprimir {
+  background: #4CAF50;
+  color: white;
+}
+
+.imprimir:hover {
+  background: #3e8e41;
+}
+
+.descargar {
+  background: #2196F3;
+  color: white;
+}
+
+.descargar:hover {
+  background: #0b7dda;
+}
+
+.volver {
+  background: #9c27b0;
+  color: white;
+}
+
+.volver:hover {
+  background: #7b1fa2;
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 480px) {
+  .etiqueta-card {
+    padding: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,557 @@
+/* ==================== MODERN CONTAINER ==================== */
+.etiquetas-modern-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 2rem;
+}
+
+/* ==================== DEMO BANNER ==================== */
+.demo-banner-modern {
+  max-width: 1400px;
+  margin: 0 auto 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  color: white;
+}
+
+.demo-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.demo-icon {
+  font-size: 2rem;
+}
+
+.demo-text strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.demo-text p {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+.demo-link {
+  background: white;
+  color: #667eea;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.demo-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+/* ==================== GRID LAYOUT ==================== */
+.etiquetas-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* ==================== CONFIG PANEL ==================== */
+.config-panel {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 2rem;
+}
+
+.panel-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.panel-title::before {
+  content: "🏷️";
+  font-size: 1.8rem;
+}
+
+/* ==================== FORM SECTIONS ==================== */
+.form-section {
+  margin-bottom: 2rem;
+}
+
+.section-label {
+  display: block;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.label-hint {
+  font-weight: 400;
+  color: #a0aec0;
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
+  text-transform: none;
+}
+
+/* ==================== TIPO SELECTOR ==================== */
+.tipo-selector-trigger {
+  background: #f7fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tipo-selector-trigger:hover {
+  border-color: #667eea;
+  background: #edf2f7;
+}
+
+.tipo-selected {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tipo-icon {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.tipo-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.tipo-name {
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 1rem;
+}
+
+.tipo-desc {
+  font-size: 0.85rem;
+  color: #718096;
+}
+
+.dropdown-arrow {
+  color: #a0aec0;
+  font-size: 0.9rem;
+}
+
+/* ==================== TIPO CHIPS ==================== */
+.tipo-chips-container {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.75rem;
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 0.5rem;
+}
+
+.tipo-chip {
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tipo-chip:hover {
+  border-color: #667eea;
+  background: #edf2f7;
+  transform: translateX(4px);
+}
+
+.tipo-chip.active {
+  border-color: #667eea;
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.chip-icon {
+  font-size: 1.75rem;
+}
+
+.chip-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.chip-name {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.chip-desc {
+  font-size: 0.85rem;
+  color: #718096;
+}
+
+/* ==================== MODERN INPUT ==================== */
+.modern-input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  background: #f7fafc;
+}
+
+.modern-input:focus {
+  outline: none;
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+.modern-input::placeholder {
+  color: #a0aec0;
+}
+
+/* ==================== MODERN TEXTAREA ==================== */
+.modern-textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  background: #f7fafc;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.modern-textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+.modern-textarea::placeholder {
+  color: #a0aec0;
+}
+
+/* ==================== PLANTILLAS GRID ==================== */
+.plantillas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.plantilla-card {
+  background: #f7fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.plantilla-card:hover {
+  border-color: #667eea;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.plantilla-card.active {
+  border-color: #667eea;
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.plantilla-preview {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.plantilla-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.plantilla-name {
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 0.95rem;
+}
+
+.plantilla-desc {
+  font-size: 0.75rem;
+  color: #718096;
+  line-height: 1.3;
+}
+
+/* ==================== ACTION BUTTONS ==================== */
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn-action {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-download {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.btn-download:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-save {
+  background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(72, 187, 120, 0.3);
+}
+
+.btn-save:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(72, 187, 120, 0.4);
+}
+
+.btn-action:disabled {
+  background: #cbd5e0;
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.6;
+}
+
+/* ==================== PREVIEW PANEL ==================== */
+.preview-panel {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  min-height: 600px;
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.preview-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0;
+}
+
+.preview-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* ==================== ERROR CARD ==================== */
+.error-card {
+  background: linear-gradient(135deg, #fed7d7 0%, #feb2b2 100%);
+  border: 2px solid #fc8181;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #c53030;
+}
+
+.error-icon {
+  font-size: 1.5rem;
+}
+
+/* ==================== PREVIEW CANVAS ==================== */
+.preview-canvas-container {
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  border: 2px dashed #cbd5e0;
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.preview-empty {
+  text-align: center;
+  color: #a0aec0;
+}
+
+.empty-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.preview-empty p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.canvas-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvas-wrapper canvas {
+  animation: fadeInScale 0.5s ease;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ==================== PREVIEW INFO ==================== */
+.preview-info {
+  background: #f7fafc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #4a5568;
+  font-size: 0.9rem;
+}
+
+.info-value {
+  color: #2d3748;
+  font-size: 0.9rem;
+  max-width: 60%;
+  text-align: right;
+  word-break: break-word;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 1200px) {
+  .etiquetas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .config-panel {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .etiquetas-modern-container {
+    padding: 1rem;
+  }
+
+  .demo-banner-modern {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .config-panel,
+  .preview-panel {
+    padding: 1.5rem;
+  }
+
+  .plantillas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .preview-canvas-container {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .panel-title {
+    font-size: 1.5rem;
+  }
+
+  .tipo-chip,
+  .plantilla-card {
+    padding: 0.75rem;
+  }
+
+  .btn-action {
+    padding: 0.875rem;
+    font-size: 0.95rem;
+  }
+}
