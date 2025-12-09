@@ -10,7 +10,7 @@
 
 ## 📸 Preview
 
-![Etiquetas Express Preview](./frontend/proyecto/src/assets/preview.png)
+![Etiquetas Express Preview](./preview.png)
 
 ---
 
