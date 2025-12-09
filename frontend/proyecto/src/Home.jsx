@@ -25,10 +25,10 @@ const Home = () => {
         <div className="home-hero-content">
           <div className="home-hero-text">
             <div className="hero-badge">✨ Sin registro requerido</div>
-            <h1 className="home-hero-title">
-              Generador Profesional de
-              <span className="gradient-text"> Códigos de Barras</span>
-            </h1>
+           <h1 className="home-hero-title">
+  Generador Profesional de 
+  <span className="gradient-text"> Códigos de Barras</span>
+</h1>
             <p className="home-hero-description">
               Crea etiquetas profesionales con 7 tipos de códigos diferentes.
               Vista previa en tiempo real, plantillas personalizables y descarga
