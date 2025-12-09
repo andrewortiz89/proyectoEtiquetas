@@ -182,7 +182,19 @@ app.use((err, req, res, next) => {
 // INICIAR SERVIDOR
 // ==========================================
 const PORT = process.env.PORT || 3000;
-
+// Ruta raíz
+app.get("/", (req, res) => {
+  res.json({ 
+    success: true,
+    message: "API de Etiquetas Express funcionando correctamente",
+    endpoints: {
+      health: "/health",
+      login: "/login",
+      register: "/register",
+      etiquetas: "/api/etiquetas"
+    }
+  });
+});
 app.listen(PORT, () => {
   console.log("=================================");
   console.log(`🚀 Servidor corriendo en puerto ${PORT}`);
