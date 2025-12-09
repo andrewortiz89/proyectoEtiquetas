@@ -2,7 +2,7 @@
 
 > Generador profesional de códigos de barras con múltiples formatos y plantillas personalizables.
 
-[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://proyectoetiquetas.onrender.com)
+[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://proyectoetiquetas-1.onrender.com)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Node](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen)](https://nodejs.org)
 
@@ -19,6 +19,7 @@
 ### 🎯 Funcionalidades Principales
 
 - **7 Tipos de Códigos Soportados**
+
   - Code 128
   - Code 39
   - EAN-13
@@ -28,6 +29,7 @@
   - PDF417
 
 - **5 Plantillas Predefinidas**
+
   - Clásica
   - Compacta
   - Grande
@@ -45,6 +47,7 @@
 ## 🛠️ Stack Tecnológico
 
 ### Frontend
+
 - **React** 18.x - Librería UI
 - **React Router** - Navegación SPA
 - **CSS3** - Estilos personalizados
@@ -53,6 +56,7 @@
 - **Vite** - Build tool
 
 ### Backend
+
 - **Node.js** - Runtime
 - **Express.js** - Framework web
 - **MySQL** - Base de datos
@@ -60,6 +64,7 @@
 - **CORS** - Manejo de peticiones cross-origin
 
 ### Infraestructura
+
 - **Render** - Hosting (Web Service)
 - **CleverCloud** - Base de datos MySQL
 - **GitHub** - Control de versiones
@@ -179,18 +184,21 @@ INSERT INTO plantillas (nombre, descripcion, ancho, alto) VALUES
 ### 5. Iniciar la aplicación
 
 **Terminal 1 - Backend:**
+
 ```bash
 cd backend
 npm start
 ```
 
 **Terminal 2 - Frontend:**
+
 ```bash
 cd frontend/proyecto
 npm run dev
 ```
 
 La aplicación estará disponible en:
+
 - Frontend: http://localhost:5173
 - Backend: http://localhost:3000
 
@@ -240,6 +248,7 @@ proyectoEtiquetas/
 ### Frontend
 
 El frontend puede desplegarse en:
+
 - Vercel
 - Netlify
 - Render (Static Site)
@@ -332,6 +341,6 @@ Si encuentras algún problema o tienes sugerencias:
 
 **⭐ Si este proyecto te fue útil, considera darle una estrella ⭐**
 
-Hecho con ❤️ por Andres Ortiz
+Hecho por Andres Ortiz
 
 </div>
