@@ -15,7 +15,7 @@ const Home = () => {
     { nombre: "EAN-8", icon: "🛒", color: "#f56565" },
     { nombre: "QR Code", icon: "📱", color: "#9f7aea" },
     { nombre: "Data Matrix", icon: "⬛", color: "#38b2ac" },
-    { nombre: "PDF417", icon: "📄", color: "#ec4899" }
+    { nombre: "PDF417", icon: "📄", color: "#ec4899" },
   ];
 
   return (
@@ -31,7 +31,8 @@ const Home = () => {
             </h1>
             <p className="home-hero-description">
               Crea etiquetas profesionales con 7 tipos de códigos diferentes.
-              Vista previa en tiempo real, plantillas personalizables y descarga instantánea.
+              Vista previa en tiempo real, plantillas personalizables y descarga
+              instantánea.
             </p>
 
             <div className="home-hero-buttons">
@@ -40,7 +41,7 @@ const Home = () => {
                 <span>Comenzar Ahora</span>
                 <span className="btn-arrow">→</span>
               </Link>
-              
+
               <Link to="/Login" className="btn-crear-cuenta">
                 <span className="btn-icon">👤</span>
                 <span>Crear Cuenta</span>
@@ -84,14 +85,16 @@ const Home = () => {
       {/* Códigos Soportados */}
       <div className="codigos-section">
         <h2 className="section-title">7 Tipos de Códigos Soportados</h2>
-        <p className="section-subtitle">Todos con vista previa en tiempo real</p>
-        
+        <p className="section-subtitle">
+          Todos con vista previa en tiempo real
+        </p>
+
         <div className="codigos-grid">
           {codigosSoportados.map((codigo, idx) => (
-            <div 
-              key={idx} 
+            <div
+              key={idx}
               className="codigo-card"
-              style={{ '--card-color': codigo.color }}
+              style={{ "--card-color": codigo.color }}
             >
               <div className="codigo-icon">{codigo.icon}</div>
               <span className="codigo-name">{codigo.nombre}</span>
@@ -103,18 +106,30 @@ const Home = () => {
       {/* Características Principales */}
       <div className="features-modern-section">
         <h2 className="section-title">Características Destacadas</h2>
-        
+
         <div className="features-modern-grid">
           <div className="feature-modern-card">
-            <div className="feature-icon-wrapper" style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" }}>
+            <div
+              className="feature-icon-wrapper"
+              style={{
+                background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+              }}
+            >
               <span className="feature-icon">⚡</span>
             </div>
             <h3>Vista Previa en Tiempo Real</h3>
-            <p>Ve tu etiqueta mientras la creas, con actualización instantánea</p>
+            <p>
+              Ve tu etiqueta mientras la creas, con actualización instantánea
+            </p>
           </div>
 
           <div className="feature-modern-card">
-            <div className="feature-icon-wrapper" style={{ background: "linear-gradient(135deg, #48bb78 0%, #38a169 100%)" }}>
+            <div
+              className="feature-icon-wrapper"
+              style={{
+                background: "linear-gradient(135deg, #48bb78 0%, #38a169 100%)",
+              }}
+            >
               <span className="feature-icon">🎨</span>
             </div>
             <h3>5 Plantillas Predefinidas</h3>
@@ -122,7 +137,12 @@ const Home = () => {
           </div>
 
           <div className="feature-modern-card">
-            <div className="feature-icon-wrapper" style={{ background: "linear-gradient(135deg, #ed8936 0%, #dd6b20 100%)" }}>
+            <div
+              className="feature-icon-wrapper"
+              style={{
+                background: "linear-gradient(135deg, #ed8936 0%, #dd6b20 100%)",
+              }}
+            >
               <span className="feature-icon">✅</span>
             </div>
             <h3>Validación Automática</h3>
@@ -130,7 +150,12 @@ const Home = () => {
           </div>
 
           <div className="feature-modern-card">
-            <div className="feature-icon-wrapper" style={{ background: "linear-gradient(135deg, #9f7aea 0%, #805ad5 100%)" }}>
+            <div
+              className="feature-icon-wrapper"
+              style={{
+                background: "linear-gradient(135deg, #9f7aea 0%, #805ad5 100%)",
+              }}
+            >
               <span className="feature-icon">📥</span>
             </div>
             <h3>Descarga Instantánea</h3>
@@ -138,7 +163,12 @@ const Home = () => {
           </div>
 
           <div className="feature-modern-card">
-            <div className="feature-icon-wrapper" style={{ background: "linear-gradient(135deg, #f56565 0%, #e53e3e 100%)" }}>
+            <div
+              className="feature-icon-wrapper"
+              style={{
+                background: "linear-gradient(135deg, #f56565 0%, #e53e3e 100%)",
+              }}
+            >
               <span className="feature-icon">🔓</span>
             </div>
             <h3>Sin Registro Requerido</h3>
@@ -146,7 +176,12 @@ const Home = () => {
           </div>
 
           <div className="feature-modern-card">
-            <div className="feature-icon-wrapper" style={{ background: "linear-gradient(135deg, #38b2ac 0%, #319795 100%)" }}>
+            <div
+              className="feature-icon-wrapper"
+              style={{
+                background: "linear-gradient(135deg, #38b2ac 0%, #319795 100%)",
+              }}
+            >
               <span className="feature-icon">💾</span>
             </div>
             <h3>Almacenamiento Local</h3>
@@ -184,7 +219,9 @@ const Home = () => {
       <div className="cta-final-modern">
         <div className="cta-content">
           <h2>¿Listo para crear tu primera etiqueta?</h2>
-          <p>No necesitas registrarte. Comienza ahora mismo de forma gratuita.</p>
+          <p>
+            No necesitas registrarte. Comienza ahora mismo de forma gratuita.
+          </p>
           <Link to="/generar-etiqueta" className="btn-cta-final">
             Comenzar Ahora →
           </Link>
