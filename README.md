@@ -7,7 +7,7 @@
 [🚀 Ver Demo](https://proyectoetiquetas-1.onrender.com/) • 
 
 </div>
-
+<div>
 > Generador profesional de códigos de barras con múltiples formatos y plantillas personalizables.
 <div align="center">
 
