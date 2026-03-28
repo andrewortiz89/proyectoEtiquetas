@@ -1,12 +1,12 @@
 # 🏷️ Etiquetas Express
-
+Demo en vivo https://proyectoetiquetas-1.onrender.com/
 > Generador profesional de códigos de barras con múltiples formatos y plantillas personalizables.
+<div align="center">
 
+</div>
 [![Live Demo](https://img.shields.io/badge/demo-live-success)](https://proyectoetiquetas-1.onrender.com)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Node](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen)](https://nodejs.org)
-
----
 
 ## 📸 Preview
 
