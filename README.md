@@ -1,12 +1,17 @@
 # 🏷️ Etiquetas Express
-Demo en vivo https://proyectoetiquetas-1.onrender.com/
+
+<div align="center">
+
+[![Live Demo](https://img.shields.io/badge/🌐_DEMO_EN_VIVO-brightgreen?style=for-the-badge)]https://proyectoetiquetas-1.onrender.com/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Código_Fuente-181717?style=for-the-badge&logo=github)](https://github.com/andrewortiz89/proyectoEtiquetas)
+
+[🚀 Ver Demo](https://proyectoetiquetas-1.onrender.com/) • [📖 Instalación](#instalación) • [🐛 Reportar Issue](https://github.com/andrewortiz89/proyectoEtiquetas/issues)
+
+</div>
+
 > Generador profesional de códigos de barras con múltiples formatos y plantillas personalizables.
 <div align="center">
 
-</div>
-[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://proyectoetiquetas-1.onrender.com)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Node](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen)](https://nodejs.org)
 
 ## 📸 Preview
 
