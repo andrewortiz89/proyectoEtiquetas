@@ -2,7 +2,6 @@
 
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/🌐_DEMO_EN_VIVO-brightgreen?style=for-the-badge)]https://proyectoetiquetas-1.onrender.com/)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Código_Fuente-181717?style=for-the-badge&logo=github)](https://github.com/andrewortiz89/proyectoEtiquetas)
 
 [🚀 Ver Demo](https://proyectoetiquetas-1.onrender.com/) • [📖 Instalación](#instalación) • [🐛 Reportar Issue](https://github.com/andrewortiz89/proyectoEtiquetas/issues)
